@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Rubik&family=Source+Code+Pro&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3d3d3d;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: #3d3d3d;
+}
+
+h1 {
+  font-family: "Source Code Pro", monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.content {
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto 0 auto;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 100vh;
+  background-color: #fafafa;
+  border-left: 4px solid #3d3d3d;
+  border-right: 4px solid #3d3d3d;
+}
+
+.page {
+  margin-top: 20px;
+}
+
+.projects {
+  display: flex;
+  align-items: flex-start;
+}
+
+.projects-menu {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 4px;
+  padding-left: 4px;
+  border-radius: 5px;
+  border: 1.5px solid #3d3d3d;
+  height: 154px;
+  overflow-y: auto;
+}
+
+.projects-menu::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
+}
+
+.projects-menu::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border: 0.32em solid #fff;
+  border-radius: 100vw;
+}
+
+.projects-menu li {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.projects-menu li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.selected-project {
+  flex-grow: 1;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-top: 16px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1.5px solid #3d3d3d;
+  padding: 0px 20px 20px 20px;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  width: 550px;
+  height: 138px;
+}
