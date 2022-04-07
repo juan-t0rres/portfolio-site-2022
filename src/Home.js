@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="content">
       <div style={{ display: "flex", alignItems: "center" }}>
-        <img style={{ width: 160, marginRight: 10 }} src={me} />
+        <img alt="logo" style={{ width: 160, marginRight: 10 }} src={me} />
         <div>
           <h1>Juan Torres</h1>
           <div style={{ marginTop: -20 }}>

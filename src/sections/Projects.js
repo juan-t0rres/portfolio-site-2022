@@ -85,8 +85,13 @@ function Projects() {
           <div style={{ display: "flex", alignItems: "center" }}>
             <h3 style={{ fontFamily: "Rubik" }}>{projects[selected].title}</h3>
             {projects[selected].link && (
-              <a target="_blank" href={projects[selected].link}>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={projects[selected].link}
+              >
                 <img
+                  alt="link"
                   style={{
                     width: 22,
                     height: 22,
@@ -98,8 +103,13 @@ function Projects() {
               </a>
             )}
             {projects[selected].github && (
-              <a target="_blank" href={projects[selected].github}>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={projects[selected].github}
+              >
                 <img
+                  alt="github"
                   style={{
                     width: 22,
                     height: 22,
