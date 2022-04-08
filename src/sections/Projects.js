@@ -8,7 +8,7 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 
 function Projects() {
   const [selected, setSelected] = useState(0);
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const mobile = width < 900;
   return (
@@ -47,7 +47,7 @@ function Projects() {
           }
         >
           {mobile && (
-            <a
+            <button
               onClick={() =>
                 setSelected(
                   selected - 1 < 0 ? projects.length - 1 : selected - 1
@@ -55,7 +55,7 @@ function Projects() {
               }
             >
               &lt;
-            </a>
+            </button>
           )}
           <div
             className="selected-project"
@@ -120,9 +120,11 @@ function Projects() {
             </div>
           </div>
           {mobile && (
-            <a onClick={() => setSelected((selected + 1) % projects.length)}>
+            <button
+              onClick={() => setSelected((selected + 1) % projects.length)}
+            >
               &gt;
-            </a>
+            </button>
           )}
         </div>
       </div>
