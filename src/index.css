@@ -27,7 +27,7 @@ code {
   padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
-  height: 98vh;
+  min-height: 98vh;
   background-color: #fafafa;
   border-left: 4px solid #3d3d3d;
   border-right: 4px solid #3d3d3d;
