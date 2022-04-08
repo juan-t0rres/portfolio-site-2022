@@ -38,7 +38,7 @@ function Projects() {
           style={
             mobile
               ? {
-                  width: "80%",
+                  width: "100%",
                   margin: "0 auto 0 auto",
                   display: "flex",
                   alignItems: "center",
