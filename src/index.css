@@ -27,14 +27,10 @@ code {
   padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
-  min-height: 100vh;
+  height: 98vh;
   background-color: #fafafa;
   border-left: 4px solid #3d3d3d;
   border-right: 4px solid #3d3d3d;
-}
-
-.page {
-  margin-top: 20px;
 }
 
 .projects {
@@ -90,11 +86,12 @@ code {
 }
 
 .footer {
-  position: absolute;
-  bottom: -25px;
+  position: fixed;
+  bottom: 10px;
   font-weight: bold;
   text-align: center;
-  left: 50%;
+  color: white;
+  left: 10%;
   transform: translate(-50%, -50%);
   font-size: 14px;
 }
@@ -105,7 +102,7 @@ code {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1360px) {
   .footer {
     display: none;
   }
