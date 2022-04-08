@@ -18,7 +18,6 @@ const colorMap = {
 };
 
 function Tag(props) {
-  console.log(colorMap[props.title]);
   return (
     <div style={{ ...props.style, display: "inline-block" }}>
       <div
