@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 
 function Projects() {
   const [selected, setSelected] = useState(0);
-  const [opacity, setOpacity] = useState(1);
   const { width } = useWindowDimensions();
 
   const mobile = width < 900;
@@ -28,8 +27,6 @@ function Projects() {
                 key={project.title}
                 onClick={() => {
                   setSelected(index);
-                  setOpacity(0);
-                  setTimeout(() => setOpacity(1), 100);
                 }}
               >
                 {project.title}
@@ -60,11 +57,9 @@ function Projects() {
               &lt;
             </button>
           )}
-          <motion.div
+          <div
             className="selected-project"
             style={mobile ? { height: "100%" } : {}}
-            animate={{ opacity }}
-            transition={{ duration: opacity ? 0.2 : 0 }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
               <h3 style={{ fontFamily: "Rubik" }}>
@@ -123,7 +118,7 @@ function Projects() {
             <div style={{ marginTop: 10, fontSize: 16 }}>
               {projects[selected].description}
             </div>
-          </motion.div>
+          </div>
           {mobile && (
             <button
               onClick={() => setSelected((selected + 1) % projects.length)}
