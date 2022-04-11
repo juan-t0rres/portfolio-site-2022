@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 
 function Projects() {
   const [selected, setSelected] = useState(0);
+  const [opacity, setOpacity] = useState(1);
   const { width } = useWindowDimensions();
 
   const mobile = width < 900;
@@ -25,7 +26,11 @@ function Projects() {
                 whileHover={{ backgroundColor: "#5DDB95" }}
                 whileTap={{ scale: 0.9 }}
                 key={project.title}
-                onClick={() => setSelected(index)}
+                onClick={() => {
+                  setSelected(index);
+                  setOpacity(0);
+                  setTimeout(() => setOpacity(1), 100);
+                }}
               >
                 {project.title}
               </motion.li>
@@ -46,11 +51,11 @@ function Projects() {
         >
           {mobile && (
             <button
-              onClick={() =>
+              onClick={() => {
                 setSelected(
                   selected - 1 < 0 ? projects.length - 1 : selected - 1
-                )
-              }
+                );
+              }}
             >
               &lt;
             </button>
@@ -58,6 +63,8 @@ function Projects() {
           <motion.div
             className="selected-project"
             style={mobile ? { height: "100%" } : {}}
+            animate={{ opacity }}
+            transition={{ duration: opacity ? 0.3 : 0.01 }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
               <h3 style={{ fontFamily: "Rubik" }}>
