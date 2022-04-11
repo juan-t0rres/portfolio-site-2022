@@ -24,7 +24,7 @@ code {
   width: 80%;
   max-width: 750px;
   margin: 0 auto 0 auto;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-left: 40px;
   padding-right: 40px;
   min-height: 98vh;
@@ -66,6 +66,8 @@ code {
   font-weight: bold;
   font-size: 14px;
   padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .projects-menu li:not(:last-child) {

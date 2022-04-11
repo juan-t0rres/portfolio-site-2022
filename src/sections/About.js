@@ -2,7 +2,7 @@ import Page from "../components/Page";
 
 function About() {
   return (
-    <Page title="About" style={{ lineHeight: 1.4 }}>
+    <Page title="About" style={{ lineHeight: 1.2 }}>
       <p>
         Hi! My name is Juan Torres and I'm a developer. I'm in my senior year
         studying computer science at the University of Central Florida. I will

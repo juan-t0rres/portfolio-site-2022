@@ -5,6 +5,7 @@ import linkIcon from "../assets/link.png";
 import github from "../assets/github.png";
 import projects from "./projectList";
 import useWindowDimensions from "../hooks/useWindowDimensions";
+import { motion } from "framer-motion";
 
 function Projects() {
   const [selected, setSelected] = useState(0);
@@ -17,20 +18,17 @@ function Projects() {
         {!mobile && (
           <ul className="projects-menu">
             {projects.map((project, index) => (
-              <li
+              <motion.li
+                whileInView={{
+                  backgroundColor: index === selected ? "#5DDB95" : "#fff",
+                }}
+                whileHover={{ backgroundColor: "#5DDB95" }}
+                whileTap={{ scale: 0.9 }}
                 key={project.title}
                 onClick={() => setSelected(index)}
-                style={
-                  index === selected
-                    ? {
-                        borderRadius: 5,
-                        backgroundColor: "#5DDB95",
-                      }
-                    : {}
-                }
               >
                 {project.title}
-              </li>
+              </motion.li>
             ))}
           </ul>
         )}
@@ -57,7 +55,7 @@ function Projects() {
               &lt;
             </button>
           )}
-          <div
+          <motion.div
             className="selected-project"
             style={mobile ? { height: "100%" } : {}}
           >
@@ -118,7 +116,7 @@ function Projects() {
             <div style={{ marginTop: 10, fontSize: 16 }}>
               {projects[selected].description}
             </div>
-          </div>
+          </motion.div>
           {mobile && (
             <button
               onClick={() => setSelected((selected + 1) % projects.length)}
