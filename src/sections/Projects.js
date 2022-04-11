@@ -64,7 +64,7 @@ function Projects() {
             className="selected-project"
             style={mobile ? { height: "100%" } : {}}
             animate={{ opacity }}
-            transition={{ duration: opacity ? 0.3 : 0.01 }}
+            transition={{ duration: opacity ? 0.2 : 0 }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
               <h3 style={{ fontFamily: "Rubik" }}>
