@@ -7,9 +7,8 @@ function About() {
         Hi! My name is Juan Torres and I'm a developer. I'm in my senior year
         studying computer science at the University of Central Florida. I will
         be working for Meta starting this upcoming Fall (2022). My favorite area
-        of development is developing for the web, you can find examples of what
-        I have worked on above. I have experience in both front end and back end
-        development.
+        of development is the web, you can find examples of what I have worked
+        on above. I have experience in both front end and back end development.
       </p>
       <p>
         My favorite technologies to work with are React and Firebase but I also
