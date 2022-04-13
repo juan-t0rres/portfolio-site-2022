@@ -13,10 +13,6 @@ function Contact() {
         </a>{" "}
         or through discord at <b>huan#1657</b>
       </p>
-      <p style={{ marginTop: -12 }}>
-        Feel free to message me about anything{" "}
-        <span style={{ fontSize: 20 }}>😉</span>
-      </p>
     </Page>
   );
 }

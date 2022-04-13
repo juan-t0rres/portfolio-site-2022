@@ -20,9 +20,10 @@ function Projects() {
             {projects.map((project, index) => (
               <motion.li
                 whileInView={{
-                  backgroundColor: index === selected ? "#5DDB95" : "#fff",
+                  backgroundColor: index === selected ? "#3d3d3d" : "#fafafa",
+                  color: index === selected ? "#fafafa" : "#3d3d3d",
                 }}
-                whileHover={{ backgroundColor: "#5DDB95" }}
+                whileHover={{ backgroundColor: "#3d3d3d", color: "#fafafa" }}
                 whileTap={{ scale: 0.9 }}
                 key={project.title}
                 onClick={() => {
@@ -115,7 +116,7 @@ function Projects() {
                 <Tag title={tech} key={tech} />
               ))}
             </div>
-            <div style={{ marginTop: 10, fontSize: 16 }}>
+            <div style={{ marginTop: 10, fontSize: 14 }}>
               {projects[selected].description}
             </div>
           </div>

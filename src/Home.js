@@ -13,7 +13,7 @@ function Home() {
       <div style={{ display: "flex", alignItems: "center" }}>
         <motion.img
           alt="logo"
-          style={{ width: 160, marginRight: 10, marginTop: height }}
+          style={{ width: 180, marginRight: 10, marginTop: height }}
           animate={{ marginTop: 0 }}
           transition={{ duration: 2, type: "spring", stiffness: 50 }}
           src={me}
