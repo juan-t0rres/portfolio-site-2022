@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Rubik&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: "Calibre";
+  src: local("Calibre"), url(./fonts/CalibreBold.otf) format("opentype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
 
 body {
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #3d3d3d;
@@ -12,12 +20,10 @@ body {
 }
 
 h1 {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Calibre";
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h2 {
+  font-family: "Calibre";
 }
 
 .content {
@@ -36,6 +42,7 @@ code {
 .projects {
   display: flex;
   align-items: flex-start;
+  margin-top: -20px;
 }
 
 .projects-menu {

@@ -23,7 +23,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.5 }}
         >
-          <h1>Juan Torres</h1>
+          <h1 style={{ fontSize: 40 }}>Juan Torres</h1>
           <div style={{ marginTop: -20 }}>
             Welcome to my portfolio!{" "}
             <span style={{ fontSize: 20, marginLeft: 5 }}>👋</span>

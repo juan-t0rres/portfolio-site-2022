@@ -63,7 +63,7 @@ function Projects() {
             style={mobile ? { height: "100%" } : {}}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
-              <h3 style={{ fontFamily: "Rubik" }}>
+              <h3 style={{ fontFamily: "Calibre", fontSize: 24 }}>
                 {projects[selected].title}
               </h3>
               {projects[selected].link && (
@@ -78,7 +78,7 @@ function Projects() {
                       width: 22,
                       height: 22,
                       marginLeft: 5,
-                      marginTop: 2,
+                      marginTop: 0,
                     }}
                     src={linkIcon}
                   />
@@ -96,7 +96,7 @@ function Projects() {
                       width: 22,
                       height: 22,
                       marginLeft: 5,
-                      marginTop: 2,
+                      marginTop: 0,
                     }}
                     src={github}
                   />
